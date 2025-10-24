@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>PROFIL MAHASISWA BERPRESTASI</h1>
+        <p>Reza Putra Nurhudaya - Teknik Informatika</p>
+      </div>
+    </header>
+
+    <nav>
+      <div class="container">
+        <ul>
+          <li><a href="#tentang">Tentang Saya</a></li>
+          <li><a href="#prestasi">Prestasi</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <section id="tentang" class="card">
+          <h2>Tentang Saya</h2>
+          <div class="profile-content">
+            <img
+              src="./eja.jpg"
+              alt="Foto Profil Reza Putra Nurhudaya"
+              class="profile-pic"
+            />
+            <p>
+              Saya adalah seorang mahasiswa Teknik Informatika yang bersemangat
+              dalam pengembangan perangkat lunak dan kecerdasan buatan. Saya
+              memiliki minat khusus dalam pemrograman dan struktur data, serta
+              selalu berusaha untuk meningkatkan keterampilan pemrograman saya.
+            </p>
+          </div>
+        </section>
+
+        <section id="prestasi" class="card">
+          <h2>Prestasi Akademik & Non-Akademik</h2>
+          <ul class="prestasi-list">
+            <li>
+              🏆 Peserta Terbaik Digitalent di Bidang Junior Network
+              Administrator - DIGITALENT KOMINFO (2024)
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <footer id="kontak">
+      <div class="container">
+        <p>Hubungi saya melalui media sosial:</p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/reza-putra-nurhudaya"
+            title="LinkedIn"
+            target="_blank"
+          >
+            <img
+              src="https://api.iconify.design/mdi/linkedin.svg?color=white"
+              alt="LinkedIn Logo"
+              class="social-icon"
+            />
+          </a>
+          <a href="https://github.com/MasReza354" title="GitHub">
+            <img
+              src="https://api.iconify.design/mdi/github.svg?color=white"
+              alt="GitHub Logo"
+              class="social-icon"
+              target="_blank"
+            />
+          </a>
+          <a href="mailto:masrezaa354@gmail.com" title="Email">
+            <img
+              src="https://api.iconify.design/mdi/gmail.svg?color=white"
+              alt="Email Logo"
+              class="social-icon"
+              target="_blank"
+            />
+          </a>
+        </div>
+        <p class="copyright">
+          &copy; 2025 Reza Putra Nurhudaya. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
